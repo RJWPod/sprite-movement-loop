@@ -45,11 +45,9 @@ input.onButtonPressed(Button.A, function () {
             basic.pause(1000)
         } else if (index == 3) {
             basic.showNumber(index)
-            basic.pause(500)
             music.playTone(698, music.beat(BeatFraction.Half))
             music.playTone(740, music.beat(BeatFraction.Quarter))
-            basic.showIcon(IconNames.Yes)
-            basic.pause(2000)
+            basic.pause(1000)
             index = 0
             Sprite = game.createSprite(4, 0)
         }
