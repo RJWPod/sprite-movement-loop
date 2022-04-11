@@ -7,13 +7,12 @@ input.onButtonPressed(Button.A, function () {
         for (let index2 = 0; index2 < 4; index2++) {
             Sprite.turn(Direction.Right, 45)
             Sprite.move(1)
-            basic.pause(0)
             Sprite.turn(Direction.Left, 45)
-            basic.pause(100)
+            basic.pause(75)
         }
         Sprite.turn(Direction.Left, 45)
         for (let index2 = 0; index2 < 5; index2++) {
-            basic.pause(100)
+            basic.pause(75)
             Sprite.move(1)
         }
         for (let index2 = 0; index2 < 5; index2++) {
@@ -22,16 +21,15 @@ input.onButtonPressed(Button.A, function () {
             Sprite.turn(Direction.Right, 45)
         }
         for (let index2 = 0; index2 < 5; index2++) {
-            basic.pause(100)
+            basic.pause(75)
             Sprite.move(-1)
         }
         Sprite.turn(Direction.Left, 45)
         for (let index2 = 0; index2 < 5; index2++) {
-            basic.pause(100)
+            basic.pause(75)
             Sprite.move(1)
         }
         index += 1
-        basic.pause(1000)
         Sprite.delete()
         if (index == 1) {
             basic.showNumber(index)
