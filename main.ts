@@ -41,11 +41,12 @@ input.onButtonPressed(Button.A, function () {
             basic.pause(1000)
         } else if (index == 3) {
             basic.showNumber(index)
-            Sprite = game.createSprite(4, 0)
-            basic.pause(1000)
+            basic.showIcon(IconNames.Yes)
             index = 0
             music.playTone(659, music.beat(BeatFraction.Quarter))
             music.playTone(740, music.beat(BeatFraction.Quarter))
+            basic.pause(100)
+            Sprite = game.createSprite(4, 0)
         }
     }
 })
