@@ -6,12 +6,12 @@ input.onButtonPressed(Button.A, function () {
         }
         for (let index = 0; index < 4; index++) {
             Sprite.turn(Direction.Right, 45)
-            basic.pause(100)
             Sprite.move(1)
             basic.pause(100)
-            Sprite.turn(Direction.Right, -45)
+            Sprite.turn(Direction.Left, 45)
+            basic.pause(100)
         }
-        Sprite.turn(Direction.Right, -45)
+        Sprite.turn(Direction.Left, 45)
         for (let index = 0; index < 5; index++) {
             basic.pause(100)
             Sprite.move(1)
@@ -20,14 +20,14 @@ input.onButtonPressed(Button.A, function () {
             Sprite.turn(Direction.Left, 45)
             Sprite.move(1)
             basic.pause(100)
-            Sprite.turn(Direction.Left, -45)
+            Sprite.turn(Direction.Right, 45)
         }
         for (let index = 0; index < 5; index++) {
             basic.pause(100)
             Sprite.move(-1)
         }
         Sprite.turn(Direction.Left, 45)
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 5; index++) {
             basic.pause(100)
             Sprite.move(1)
         }
