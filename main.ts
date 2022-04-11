@@ -33,19 +33,24 @@ input.onButtonPressed(Button.A, function () {
         Sprite.delete()
         if (index == 1) {
             basic.showNumber(index)
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(466, music.beat(BeatFraction.Quarter))
             Sprite = game.createSprite(4, 0)
             basic.pause(1000)
         } else if (index == 2) {
             basic.showNumber(index)
             Sprite = game.createSprite(4, 0)
+            music.playTone(523, music.beat(BeatFraction.Half))
+            music.playTone(554, music.beat(BeatFraction.Quarter))
             basic.pause(1000)
         } else if (index == 3) {
             basic.showNumber(index)
-            basic.showIcon(IconNames.Yes)
-            index = 0
-            music.playTone(659, music.beat(BeatFraction.Quarter))
+            basic.pause(500)
+            music.playTone(698, music.beat(BeatFraction.Half))
             music.playTone(740, music.beat(BeatFraction.Quarter))
-            basic.pause(100)
+            basic.showIcon(IconNames.Yes)
+            basic.pause(2000)
+            index = 0
             Sprite = game.createSprite(4, 0)
         }
     }
